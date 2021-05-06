@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "author": "IOTA Foundation",
+  "author": "Nordic Energy",
   "contributors": [
-    "Manuel Bieh <info@manuelbieh.de>",
-    "Umair Sarfraz",
-    "Charlie Varley"
+    "Miko Vainio <info@nordicenergy.io>",
+   
   ],
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/mocha --timeout 5000 --exit --require @babel/register \"__tests__/**/*.spec.js\"  --require babel-polyfill",
