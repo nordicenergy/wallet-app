@@ -1,12 +1,12 @@
 {
-  "name": "trinity-desktop",
-  "productName": "Trinity",
+  "name": "nordic-energy-desktop-wallet",
+  "productName": "Nordic Energy Wallet",
   "version": "1.6.2",
-  "url": "https://trinity.iota.org",
-  "homepage": "https://trinity.iota.org",
+  "url": "https://wallet.nordicenergy.io",
+  "homepage": "https://wallet.nordicenergy.io",
   "description": "Desktop wallet for IOTA",
   "main": "dist/main.js",
-  "author": "IOTA Foundation <contact@iota.org>",
+  "author": "Nordic Energy <contact@nordicenergy.io>",
   "license": "Apache-2.0 OR EPL-2.0",
   "moduleRoots": [
     ".",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iotaledger/trinity-wallet.git"
+    "url": "git+https://github.com/nordicenergy/wallet-app.git"
   },
   "scripts": {
     "start": "concurrently --kill-others \"npm run devserver\" \"cross-env NODE_ENV=development electron -r @babel/register native/Index.js\"",
@@ -91,11 +91,11 @@
       "!node_modules/realm/src${/*}",
       "!node_modules/realm/vendor${/*}"
     ],
-    "appId": "org.iota.trinity",
+    "appId": "io.nordicenergy.wallet",
     "asar": true,
     "protocols": [
       {
-        "name": "IOTA URL Scheme",
+        "name": "Nordic Energy URL Scheme",
         "schemes": [
           "iota"
         ]
@@ -123,7 +123,7 @@
       "deleteAppDataOnUninstall": true
     },
     "win": {
-      "publisherName": "IOTA Stiftung",
+      "publisherName": "Nordic Energy",
       "target": "nsis",
       "timeStampServer": "http://timestamp.digicert.com"
     },
@@ -132,13 +132,13 @@
         "AppImage"
       ],
       "desktop": {
-        "Name": "Trinity",
-        "Comment": "Desktop wallet for IOTA",
-        "Categories": "Office;Network;Finance"
+        "Name": "Nordic Energy",
+        "Comment": "Desktop wallet for Nordic Energy",
+        "Categories": "Wallet;Network;Energy"
       }
     },
     "mac": {
-      "category": "public.app-category.finance",
+      "category": "public.app-category.energy",
       "target": [
         "dmg",
         "zip"
@@ -153,7 +153,7 @@
     },
     "publish": {
       "provider": "generic",
-      "url": "https://iotaledger-files.s3.amazonaws.com/trinity/desktop/releases/",
+      "url": "https://nordicenergy-files.s3.amazonaws.com/wallet/desktop/releases/",
       "publishAutoUpdate": true,
       "channel": "latest"
     }
