@@ -23,7 +23,7 @@ class Ledger {
      * @param {number} index - Target seed index
      * @param {number} page - Target seed page
      * @param {number} security - Target security level
-     * @returns {object} Ledger IOTA transport
+     * @returns {object} Ledger Nordic Energy transport
      */
     async selectSeed(index, page, security) {
         if (!this.connected) {
@@ -77,7 +77,7 @@ class Ledger {
      * @param {number} index - Target seed index
      * @param {number} page - Target seed page
      * @param {number} security - Target security level
-     * @returns {promise} Resolves with IOTA Transport object
+     * @returns {promise} Resolves with Nordic Energy Transport object
      */
     async awaitApplication(index, page, security) {
         return new Promise((resolve, reject) => {
@@ -107,7 +107,7 @@ class Ledger {
                         return;
                     }
 
-                    // Retry application await on error 0x6e00 - IOTA application not open
+                    // Retry application await on error 0x6e00 - Nordic Energy application not open
                     if (error.statusCode === 0x6e00) {
                         timeout = setTimeout(() => callback(), 4000);
                     } else {
@@ -152,7 +152,7 @@ class Ledger {
         this.connected = status === 'add';
         this.listeners.forEach((listener) => listener(this.connected));
 
-        if (!this.connected && this.iota) {
+        if (!this.connected && this.nordicenergy) {
             this.transport.close();
             this.iota = null;
         }
