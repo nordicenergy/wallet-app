@@ -1,15 +1,15 @@
 {
-  "name": "trinity-wallet",
-  "version": "0.0.0",
+  "name": "nordic-energy-wallet",
+  "version": "0.0.1",
   "private": true,
-  "url": "https://trinity.iota.org",
-  "homepage": "https://trinity.iota.org",
-  "description": "Cross-platform wallet for IOTA",
-  "author": "IOTA Foundation <contact@iota.org>",
+  "url": "https://wallet.nordicenergy.io",
+  "homepage": "https://wallet.nordicenergy.io",
+  "description": "Cross-platform wallet for Nordic Energy",
+  "author": "Nordic Energy Corporation Ltd. <contact@nordicenergy.io>",
   "license": "Apache-2.0 OR EPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iotaledger/trinity-wallet.git"
+    "url": "git+https://github.com/nordicenergy/wallet-app.git"
   },
   "main": "index.js",
   "scripts": {
@@ -63,4 +63,6 @@
     "bl": ">=4.0.3"
   },
   "snyk": true
+}
+
 }
