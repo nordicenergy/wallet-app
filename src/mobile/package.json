@@ -1,15 +1,15 @@
 {
-  "name": "trinity-mobile",
+  "name": "nordic-energy-mobile-wallet",
   "version": "1.6.2",
   "private": true,
-  "url": "https://trinity.iota.org",
-  "homepage": "https://trinity.iota.org",
-  "description": "Mobile wallet for IOTA",
-  "author": "IOTA Foundation <contact@iota.org>",
+  "url": "https://wallet.nordicenergy.io",
+  "homepage": "https://wallet.nordicenergy.io",
+  "description": "Mobile wallet for Nordic Energy",
+  "author": "Nordic Energy <contact@nordicenergy.io>",
   "license": "Apache-2.0 OR EPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iotaledger/trinity-wallet.git"
+    "url": "git+https://github.com/nordicenergy/wallet-app.git"
   },
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -189,7 +189,7 @@
   },
   "rnpm": {
     "android": {
-      "mainFilePath": "src/main/java/com/iota/trinity/MainApplication.java"
+      "mainFilePath": "src/main/java/com/nordicenergy/wallet/MainApplication.java"
     }
   },
   "snyk": true
