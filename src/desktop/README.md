@@ -1,9 +1,9 @@
-# IOTA Trinity Desktop Wallet
+# Nordic Energy Desktop Wallet
 
 | Testing [![Build Status](https://badge.buildkite.com/7116f57245f08626a7ef985f3805bfc836f1d1402224012e6a.svg?branch=develop)](https://buildkite.com/iota-foundation/trinity-desktop-prs) | Deployment [![Build Status](https://badge.buildkite.com/2c9f4392dc33c7d5f164c5e59da78bf11219086a6756362d11.svg?branch=develop)](https://buildkite.com/iota-foundation/trinity-desktop-deploy) |
 | --- | --- |
 
-This is the repository for the IOTA Trinity Desktop Wallet. The application is based on [React](https://reactjs.org) and built on [Electron](https://electronjs.org/).
+This is the repository for the Nordic Energy Desktop Wallet. The application is based on [React](https://reactjs.org) and built on [Electron](https://electronjs.org/).
 
 ## Required Dependencies
 
@@ -35,7 +35,7 @@ yum install libusbx-devel
 
 ### 1. Installing dependencies
 
-After installing the [shared dependencies](https://github.com/iotaledger/trinity-wallet#installation), install the desktop dependencies:
+After installing the [shared dependencies](https://github.com/nordicenergy/wallet-wallet#installation), install the desktop dependencies:
 
 ```
 npm run deps:desktop
@@ -47,7 +47,7 @@ Then, navigate to this directory:
 cd src/desktop
 ```
 
-### 2. Prepare Trinity desktop appplication
+### 2. Prepare Nordic Energy desktop wallet application
 
 When the npm install is done you can prepare the wallet application for compilation by running:
 
@@ -55,9 +55,9 @@ When the npm install is done you can prepare the wallet application for compilat
 npm run build
 ```
 
-Then, you can either compile a production version (3a) or development version (3b) of Trinity:
+Then, you can either compile a production version (3a) or development version (3b) of Nordic Energy:
 
-### 3a. Compile Trinity desktop appplication
+### 3a. Compile Nordic Energy desktop wallet appplication
 
 After the application is prepared you can compile the wallet application by running:
 
@@ -71,7 +71,7 @@ This will start the building process for the Trinity Desktop application and cou
 
 After the building is finished, the application executable and installation files will be located in the directory `src/desktop/out/`.
 
-### 3b. Run Trinity desktop app in development mode
+### 3b. Run Nordic Energy desktop app in development mode
 
 To start the application in development mode, run
 
@@ -85,9 +85,9 @@ The application window will open automatically once the build is ready.
 
 #### Wallet does not start after updating codebase to newer version
 
-*   First, try to reinstall dependencies by running `npm install` and build the walelt again with `npm run build` as, most probably, the wallet dependencies have been updated and the configuration has changed.
+*   First, try to reinstall dependencies by running `npm install` and build the wallet again with `npm run build` as, most probably, the wallet dependencies have been updated and the configuration has changed.
 
-*   Development environment does not clear user configuration files after switching between different Trinity versions. You have to do it manually by removing the directory yourself:
+*   Development environment does not clear user configuration files after switching between different Wallet versions. You have to do it manually by removing the directory yourself:
 
 ```
 # On macOS
@@ -103,4 +103,4 @@ rm -rf ~/.config/Electron
 #### Wallet starts with a blank screen
 
 *   Try to reload the application with _ctrl+r_ (_cmd+r_ on macOS) while the `Developer tools` window is focused
-*   Check `Developer tools` console for any errors - try to fix them or report at [Trinity issues](https://github.com/iotaledger/trinity-wallet/issues)
+*   Check `Developer tools` console for any errors - try to fix them or report at [Nordic Energy wallet issues](https://github.com/nordicenergy/wallet-app/issues)
